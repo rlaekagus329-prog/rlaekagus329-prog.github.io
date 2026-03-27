@@ -14,12 +14,12 @@
 ---
 
 ### 🚀 Featured Projects
-#### 1️⃣ [FFG (가칭)](FFG_저장소_링크)
+#### 1️⃣ [FFG (Fin Flow Guard)](FFG_저장소_링크)
 - **도메인:** 금융 / 보완 (사기 탐지)
 - **핵심 역량:** AI 모델의 편향성 해결을 위해 3일에 걸쳐 **데이터 스키마를 바닥부터 다시 설계**, Rule+머신러닝(XGBoost+SHAP)
 - **Trouble Shooting:** 학습 데이터 부족 문제를 데이터 증강(Augmentation)과 스키마 변경으로 정면 돌파
   
-####  2️⃣[AI-Scheduler (Project 52)](지원하시는_회사의_서비스/제품 명/project52_저장소_링크)
+####  2️⃣[Memos](지원하시는_회사의_서비스/제품 명/project52_저장소_링크)
 - **도메인:** 협업 도구 / AI 일정 관리
 - **핵심 역량:** **NLP(Gemini API)**를 활용한 기능 추출 + **ML(XGBoost)** 기반 일정 예측 알고리즘 설계 및 구현
 - **Trouble Shooting:** IT 프로젝트 특성(산출물, 인원수)을 수치화하여 모델에 반영하는 커스텀 데이터 스키마 구축
