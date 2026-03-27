@@ -14,17 +14,17 @@
 ---
 
 ### 🚀 Featured Projects
-#### 1️⃣ [FFG (Fin Flow Guard)](FFG_저장소_링크)
+#### 1️⃣ [FFG (Fin Flow Guard)](https://drive.google.com/drive/folders/1u0Q14xwqdlNZUg1k0HcekRUOmexQicNL?usp=sharing)
 - **도메인:** 금융 / 보완 (사기 탐지)
 - **핵심 역량:** AI 모델의 편향성 해결을 위해 3일에 걸쳐 **데이터 스키마를 바닥부터 다시 설계**, Rule+머신러닝(XGBoost+SHAP)
 - **Trouble Shooting:** 학습 데이터 부족 문제를 데이터 증강(Augmentation)과 스키마 변경으로 정면 돌파
   
-#### 2️⃣ [캘린더 Ai](FFG_저장소_링크)
+#### 2️⃣ [캘린더 Ai](https://drive.google.com/drive/folders/17gJXPEVbs6UF6qgRq33B8DahW2P_TQj6?usp=sharing)
 - **도메인:** 협업 도구 / AI 일정 관리
 - **핵심 역량:** **NLP(Gemini API)**를 활용한 기능 추출 + **ML(XGBoost)** 기반 일정 예측 알고리즘 설계 및 구현
 - **Trouble Shooting:** IT 프로젝트 특성(산출물, 인원수)을 수치화하여 모델에 반영하는 커스텀 데이터 스키마 구축
 
-#### 3️⃣ [여행담기](여행담기_저장소_링크)
+#### 3️⃣ [여행담기](https://drive.google.com/drive/folders/1KGyTf2mf5q3VXAr7Jk3kOd9BPqmOp-QP?usp=sharing)
 - **도메인:** 관광 / 추천 서비스
 - **핵심 역량:** 최신 프레임워크에 의존하기보다 MVC 패턴의 데이터 흐름을 직접 제어하며 웹 아키텍처 근간 체득
 - **Trouble Shooting:** 대용량 XML 공공데이터 파싱 및 비즈니스 로직 연동
