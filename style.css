@@ -1,0 +1,101 @@
+/* 기본 초기화 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: #0d1117; /* 깃허브 다크 테마 배경 */
+    color: #c9d1d9;
+    font-family: 'Pretendard', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+/* 헤더 디자인 */
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.logo {
+    color: #58a6ff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    word-break: keep-all;
+}
+
+.subtitle { color: #8b949e; font-size: 1.1rem; }
+
+/* 섹션 타이틀 */
+h2 {
+    color: #ffffff;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* 기술 스택 태그 */
+.tags span {
+    display: inline-block;
+    background: #161b22;
+    border: 1px solid #30363d;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 0.9rem;
+    color: #58a6ff;
+}
+
+/* 프로젝트 카드 */
+.project-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #58a6ff;
+}
+
+.project-card h3 { color: #ffffff; margin-bottom: 10px; }
+
+/* 버튼 스타일 */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    color: #58a6ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.btn:hover { text-decoration: underline; }
+
+/* 푸터 */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    color: #8b949e;
+}
+
+.social-links { margin-top: 15px; }
+.social-links a {
+    margin: 0 10px;
+    color: #c9d1d9;
+    text-decoration: none;
+    font-size: 0.9rem;
+}

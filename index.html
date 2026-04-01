@@ -1,19 +1,57 @@
-<style>
-    body {
-        background-color: #0d1117; /* 깃허브 다크모드 배경색 */
-        color: #c9d1d9;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 50px;
-    }
-    a { color: #58a6ff; text-decoration: none; }
-    .project-card {
-        border: 1px solid #30363d;
-        border-radius: 6px;
-        padding: 20px;
-        margin: 10px;
-        width: 80%;
-    }
-</style>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIM DAM HYUN | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="logo">⚡ DAM HYUN</div>
+        <h1>"데이터의 근본을 파고들어 비즈니스의 확실한 해답을 제시합니다."</h1>
+        <p class="subtitle">질문하고 파고드는 집요함으로 본질을 해결하는 개발자 <b>김담현</b>입니다.</p>
+    </header>
+
+    <section class="tech-stack">
+        <h2><i class="fa-solid fa-code"></i> Tech Stack</h2>
+        <div class="tags">
+            <span>Java</span> <span>Spring Boot</span> <span>Python</span> <span>Flask</span>
+            <span>React</span> <span>XGBoost</span> <span>NLP</span> <span>MySQL</span>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2><i class="fa-solid fa-rocket"></i> Featured Projects</h2>
+
+        <div class="project-card">
+            <h3>1️⃣ FFG (Fin Flow Guard)</h3>
+            <p>금융 사기 탐지 시스템 | XGBoost + SHAP 기반 데이터 스키마 설계</p>
+            <a href="https://drive.google.com/drive/folders/1u0Q14xwqdlNZUg1k0HcekRUOmexQicNL?usp=sharing" target="_blank" class="btn">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+
+        <div class="project-card">
+            <h3>2️⃣ 캘린더 AI</h3>
+            <p>NLP(Gemini) 일정 추출 및 XGBoost 기반 일정 예측 알고리즘</p>
+            <a href="https://drive.google.com/drive/folders/17gJXPEVbs6UF6qgRq33B8DahW2P_TQj6?usp=sharing" target="_blank" class="btn">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+
+        <div class="project-card">
+            <h3>3️⃣ 여행담기</h3>
+            <p>대용량 XML 공공데이터 파싱 및 MVC 아키텍처 구현</p>
+            <a href="https://drive.google.com/drive/folders/1KGyTf2mf5q3VXAr7Jk3kOd9BPqmOp-QP?usp=sharing" target="_blank" class="btn">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p><i class="fa-envelope"></i> dlagurks@gmail.com</p>
+        <div class="social-links">
+            <a href="#">Blog</a>
+            <a href="#">Resume (PDF)</a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

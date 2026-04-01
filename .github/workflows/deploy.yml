@@ -1,10 +1,9 @@
-name: Deploy Static Website to Pages
+name: Deploy Static Web to Pages
 
 on:
   push:
-    branches: ["main"] # 메인 브랜치에 푸시될 때마다 실행
+    branches: ["main"]
 
-# GitHub Pages 배포를 위한 권한 설정
 permissions:
   contents: read
   pages: write
@@ -12,23 +11,15 @@ permissions:
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Setup Pages
         uses: actions/configure-pages@v4
-
-      - name: Upload artifact
+      - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # 저장소 루트에 있는 파일들을 업로드합니다.
-          path: '.'
-
+          path: '.'  # HTML 파일이 있는 루트 폴더를 통째로 업로드
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
