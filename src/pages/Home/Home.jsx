@@ -12,7 +12,7 @@ export default function Home({ setActiveTab }) {
             <div
                 className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
                 style={{
-                    backgroundImage: 'url("/readme/public/images/background.png")',
+                    backgroundImage: 'url("images/background.png")',
                 }}
             >
                 {/* ★ 2. 글자 가독성용 레이어 (블러 없이 밝기만 살짝 톤다운) */}

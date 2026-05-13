@@ -18,7 +18,7 @@ export default function Header({ activeTab, setActiveTab }) {
                     onClick={() => setActiveTab('home')}
                 >
                     <img
-                        src="/readme/public/images/name3.png"
+                        src="/images/name3.png"
                         alt="Kim Dam-hyun Logo"
                         className="h-10 w-auto object-contain transition-transform hover:scale-105"
                         // h-10(40px)으로 조절했습니다. 헤더 크기에 맞춰 숫자를 변경하세요.
