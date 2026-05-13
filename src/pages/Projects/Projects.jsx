@@ -9,7 +9,7 @@ export default function Projects() {
             {/* ★ 배경 이미지 레이어 (Home과 동일) */}
             <div
                 className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat fixed"
-                style={{ backgroundImage: 'url("/readme/public/images/background.png")' }}
+                style={{ backgroundImage: 'url("/images/background.png")' }}
             >
             </div>
 
