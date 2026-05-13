@@ -7,7 +7,7 @@ export default defineConfig({
         react(),
         tailwindcss(),
     ],
-    base: '/readme/',
+    base: '/',
     server: {
         port: 5173,
     }
