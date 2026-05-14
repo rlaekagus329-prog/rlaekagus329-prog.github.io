@@ -10,7 +10,7 @@ export const projectData = [
         
                        [트러블 슈팅:할루시네이션 제어]
                         할루시네이션 문제를 제어하기 위해 문맥 중심의 2단계 정밀 청킹과 핵심 조각 압축 검색 파이프라인을 구축하고(2-Stage Retrieval), 출처 표기와 근거 기반 프롬프트 제약을 통합하여 기업 리포트 답변의 신뢰도를 극대화했습니다.`,
-        tags: ["React", "Flask", "Spring", "PGVector", "Ollama", "HuggingFace", "LLM", "LangChain", "LlamaParse"],
+        tags: ["React", "Flask", "Java","RESTful API", "PGVector", "Ollama", "HuggingFace", "LLM", "LangChain", "LlamaParse","BERT","PostgreSQL","pgvector","Gradle"],
         color: "from-blue-600 to-cyan-400",
         videoUrl: "https://www.youtube.com/embed/wbfH_BSXGb4",
         link:"https://drive.google.com/file/d/1rupVZ4Qy9Mg-DeH55UzehEwZgcsZDEHi/view?usp=drive_link"
@@ -25,7 +25,7 @@ export const projectData = [
 여러 개의 무거운 비전 모델이 독립적으로 동작하는 아키텍처 특성상, 무료 클라우드 환경에서는 리소스 한계로 배포가 불가능한 문제가 있었습니다. 
 이를 해결하기 위해 로컬 메인 컴퓨터에 WSL2 기반의 온프레미스(On-Premise) 서버 환경을 직접 구축했습니다. 인바운드 방화벽 개방 및 포트 포워딩을 통해 외부 접속망을 확보하고, 각 AI 모델을 독립된 Docker 컨테이너로 격리하여 모델 간 간섭을 차단하는 분산 배포 환경을 완성했습니다. 
                       `,
-        tags: ["React", "Python", "Flask", "Deep Learning", "Image Processing", "ResNet", "MobileNet","LangGraph"],
+        tags: ["React", "Python", "FastAPI", "PyTorch", "ResNet18", "OpenCV", "NumPy","LangGraph","Pandas","WSL2","Docker","GitHub"],
         color: "from-teal-500 to-emerald-400",
         videoUrl: "https://www.youtube.com/embed/99gKJIvHG3A",
         link:"https://drive.google.com/file/d/1TghHBH1uUafra6OU_vQpdol92gct6F1d/view?usp=drive_link"
@@ -41,7 +41,7 @@ export const projectData = [
 직전 거래와의 시간차/금액차 등 직관적인 항목은 'Rule Engine'으로 즉시 차단하고, 복잡한 비선형적 거래 패턴은 'XGBoost 머신러닝 모델'에 위임하는 하이브리드 구조를 설계했습니다. 
 하이브리드(Rule+ML) 시스템의 결과값을 합산할 때 판단 기준이 왜곡되는 문제를 막기 위해, 일관된 정규화(Normalization) 규칙을 수립하고 최종 위험도 점수(0~100점)로 산출하는 일관된 스코어링 체계를 완성하여 탐지 신뢰도를 극대화했습니다.
                       `,
-        tags: ["Python", "XGBoost", "SHAP", "Java", "Spring Boot", "React", "Rule Engine", "Oracle SQL"],
+        tags: ["Python", "XGBoost", "SHAP", "Java", "Spring Boot", "React", "Rule Engine", "MyBatis","GitHub"],
         color: "from-green-500 to-emerald-400",
         videoUrl: "https://www.youtube.com/embed/NED2g-EzZpY",
         link:"https://drive.google.com/file/d/1n2XhaDLpFUl_N8K-_HwGx4xVUPg12EqC/view?usp=drive_link"
@@ -60,7 +60,7 @@ export const projectData = [
 둘째, 확보된 12,000장 규모의 데이터셋을 직접 육안으로 전수 검사하여 오레이블링 및 저품질 노이즈 데이터를 완벽하게 정제(Data Cleansing)했습니다.
 
 그 결과, 모델이 온전히 객체의 특징(Feature)에만 집중할 수 있게 되면서 최종 분류 정확도 99% 이상을 달성, 실시간 자동 입고 솔루션의 상용화 수준 신뢰도를 확보했습니다.`,
-        tags: ["Custom CNN", "MobileNetV2", "TensorFlow", "Keras", "Streamlit", "Data Pipeline"],
+        tags: ["Custom CNN", "MobileNetV2","YOLO", "TensorFlow", "Keras", "OpenCV", "Streamlit", "Data Pipeline"],
         color: "from-orange-500 to-amber-400",
         videoUrl: "https://www.youtube.com/embed/ae31c0gbF2Q",
         link:"https://youtu.be/ae31c0gbF2Q"
@@ -80,7 +80,7 @@ export const projectData = [
 3. 차원 축소: 타겟과 상관계수가 높은 핵심 기상 변수 컬럼만 최종 피처로 선별
 
 모델 평가 단계에서는 단순 수치 검증을 넘어, 실측값과 예측값의 산점도를 시각화해 오차(Residual) 패턴을 눈으로 추적했습니다. 피처 중요도(Feature Importance) 분석과 결정계수($R^2$ Score) 평가를 종합적으로 연계하며 모델 성능을 검증하는 프로세스를 확립했고, 결과적으로 정교한 데이터 전처리가 ML 모델 성능의 결정적 열쇠임을 입증했습니다.`,
-        tags: ["Python", "XGBoost", "SHAP", "ML", "Data Pipeline", "Streamlit"],
+        tags: ["Python", "XGBoost", "Linear Regression", "R2 Score", "RMSE", "Data Pipeline", "Streamlit", "Matplotlib", "Seaborn", "Pandas","NumPy","Streamlit"],
         color: "from-yellow-400 to-orange-500",
         videoUrl: "https://www.youtube.com/embed/FWjxd8SWhuU",
         link:"https://drive.google.com/file/d/1FAJzd0bNaEE5WGr6G5m1yGrsFwSVPT8B/view?usp=drive_link"
@@ -128,7 +128,7 @@ export const skillsData = [
         category: "Backend & Architecture",
         skills: [
             "Java", "Spring Boot", "Python", "Flask", "FastAPI", "Node.js",
-            "JSP/Servlet", "MVC Pattern", "Open API / XML Parsing", "Streamlit"
+            "JSP/Servlet", "MVC Pattern", "Open API / XML Parsing", "Streamlit","PyTorch","TensorFlow"
         ]
     },
     {
@@ -158,7 +158,7 @@ export const skillsData = [
         skills: [
             "PostgreSQL (pgvector)", "Oracle", "MySQL", "MariaDB",
             "Git/GitHub", "Docker", "Kafka", "Jira", "Notion",
-            "IntelliJ", "VS Code"
+            "IntelliJ", "VS Code","Slack","WsL2"
         ]
     }
 ];

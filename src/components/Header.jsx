@@ -4,7 +4,7 @@ export default function Header({ activeTab, setActiveTab }) {
     const tabs = [
         { id: 'home', label: 'Home' },
         { id: 'project', label: 'Projects' },
-        { id: 'resume', label: '이력서' }
+        { id: 'resume', label: 'Resume' }
     ];
 
     return (

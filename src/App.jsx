@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import Home from './pages/Home/Home';
 import Projects from './pages/Projects/Projects.jsx';
-
+import Resume from './pages/Resume/Resume';
 
 function App() {
     const [activeTab, setActiveTab] = useState('home');
@@ -30,12 +30,7 @@ function App() {
                 {activeTab === 'project' && <Projects />}
 
                 {/* 3. 이력서 화면 (임시) */}
-                {activeTab === 'resume' && (
-                    <div className="w-full p-10 bg-white rounded-3xl shadow-xl border-2 border-blue-500 text-center">
-                        <h2 className="text-2xl font-bold text-blue-600 mb-4">📄 이력서 및 지원하기</h2>
-                        <p className="text-gray-600">APPLY 버튼과 상세 스펙이 렌더링될 자리입니다.</p>
-                    </div>
-                )}
+                {activeTab === 'resume' && <Resume/>}
 
             </main>
         </div>
