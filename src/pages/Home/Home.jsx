@@ -41,8 +41,9 @@ export default function Home({ setActiveTab }) {
                 </h1>
 
                 <div className="text-white text-lg md:text-xl font-bold mb-12 drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)] leading-relaxed">
-                    <p className="mb-2">Java / Spring 기반의 견고한 백엔드와 AI 기술을 자연스럽게 결합합니다.</p>
-                    <p>사용자가 안심하고 누릴 수 있는 지속 가능한 서비스를 구축합니다.</p>
+                    <p className="mb-2">Java / Python 기반의 견고한 백엔드와 AI 기술을 자연스럽게 결합합니다.</p>
+                    <p className="mb-2">전통적인 소프트웨어나 비즈니스 로직에 AI 기술을 결합하여 새로운 가치를 구축합니다.</p>
+                    <p className="mb-2">사용자가 안심하고 누릴 수 있는 지속 가능한 서비스를 구축합니다.</p>
                 </div>
 
                 <button

@@ -69,42 +69,77 @@ export default function Projects() {
                             {/* ========================================== */}
                             {/* ★ 오른쪽 영역: 본문 설명(트러블슈팅) + 태그 + 링크 */}
                             {/* ========================================== */}
-                            <div className="lg:w-[55%] w-full p-6 md:p-8 flex flex-col justify-between">
+                            <div className="lg:w-[55%] w-full p-6 md:p-8 flex flex-col h-full">
 
-                                <div>
-                                    {/* 3. 본문 설명 및 트러블슈팅 (공간이 넓어졌으므로 쾌적하게 읽힘) */}
-                                    <p className="text-zinc-800 font-semibold text-xs md:text-sm leading-relaxed mb-8 break-keep whitespace-pre-line">
-                                        {project.description}
-                                    </p>
+                                {/* 본문 설명 */}
+                                <p className="text-zinc-800 font-semibold text-xs md:text-sm leading-relaxed mb-4 break-keep whitespace-pre-line">
+                                    {project.description}
+                                </p>
 
-                                    {/* 4. 기술 스택 태그 */}
-                                    <div className="flex flex-wrap gap-2 mb-8 lg:mb-0">
-                                        {project.tags.map((tag) => (
-                                            <span
-                                                key={tag}
-                                                className="px-3 py-1 bg-white/60 border border-blue-200 rounded-full text-[11px] text-blue-800 font-bold shadow-sm"
-                                            >
-                                #{tag}
-                            </span>
-                                        ))}
-                                    </div>
+                                {/* 기술 스택 태그 (mb-4로 여백 축소) */}
+                                <div className="flex flex-wrap gap-2 mb-4">
+                                    {project.tags.map((tag) => (
+                                        <span
+                                            key={tag}
+                                            className="px-3 py-1 bg-white/60 border border-blue-200 rounded-full text-[11px] text-blue-800 font-bold shadow-sm"
+                                        >
+                #{tag}
+            </span>
+                                    ))}
                                 </div>
 
-                                {/* 5. 상세보기 링크 */}
-                                <div className="flex justify-end w-full mt-6 lg:mt-0">
+                                {/* 2. 하단 영역 (버튼) - 불필요한 패딩(pt-4) 제거 */}
+                                <div className="flex justify-end items-center w-full mt-auto gap-4">
+                                    {/* GITHUB 소스 코드 배지 링크 */}
                                     <a
-                                        href={project.link}
+                                        href={project.githubLink}
                                         target="_blank"
                                         rel="noreferrer"
-                                        className="flex items-center gap-1.5 text-[11px] md:text-xs text-blue-600 hover:text-blue-800 font-black transition-colors group/link cursor-pointer no-underline"
+                                        className="group flex items-center gap-2 px-4 py-1.5 rounded-full border border-blue-200 bg-white/50 hover:bg-white/80 transition-all hover:translate-x-1"
                                     >
-                                        <span className="group-hover/link:underline decoration-2 underline-offset-4">
-                                            프로젝트 상세보기
-                                        </span>
-                                        <span className="text-lg transition-transform group-hover/link:translate-x-1">→</span>
+                                        <svg
+                                            className="w-4 h-4 text-black group-hover:animate-pulse"
+                                            fill="currentColor"
+                                            viewBox="0 0 24 24"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                fillRule="evenodd"
+                                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.218.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                                clipRule="evenodd"
+                                            />
+                                        </svg>
+                                        <span className="text-[11px] md:text-xs text-blue-700 font-black group-hover:underline decoration-2 underline-offset-4">
+                소스 코드
+            </span>
+                                    </a>
+
+                                    {/* PPT 프레젠테이션 배지 링크 */}
+                                    <a
+                                        href={project.pptLink}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="group flex items-center gap-2 px-4 py-1.5 rounded-full border border-blue-200 bg-white/50 hover:bg-white/80 transition-all hover:translate-x-1"
+                                    >
+                                        <svg
+                                            className="w-4 h-4 text-yellow-500 group-hover:animate-pulse"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                strokeWidth="2"
+                                                d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+                                            />
+                                        </svg>
+                                        <span className="text-[11px] md:text-xs text-blue-700 font-black group-hover:underline decoration-2 underline-offset-4">
+                PPT
+            </span>
                                     </a>
                                 </div>
-
                             </div>
                         </div>
                     ))}

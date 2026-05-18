@@ -13,7 +13,8 @@ export const projectData = [
         tags: ["React", "Flask", "Java","RESTful API", "PGVector", "Ollama", "HuggingFace", "LLM", "LangChain", "LlamaParse","BERT","PostgreSQL","pgvector","Gradle"],
         color: "from-blue-600 to-cyan-400",
         videoUrl: "https://www.youtube.com/embed/wbfH_BSXGb4",
-        link:"https://drive.google.com/file/d/1rupVZ4Qy9Mg-DeH55UzehEwZgcsZDEHi/view?usp=drive_link"
+        githubLink:"",
+        pptLink:"https://drive.google.com/file/d/1rupVZ4Qy9Mg-DeH55UzehEwZgcsZDEHi/view?usp=drive_link"
     },
     {
         id: 2,
@@ -28,7 +29,8 @@ export const projectData = [
         tags: ["React", "Python", "FastAPI", "PyTorch", "ResNet18", "OpenCV", "NumPy","LangGraph","Pandas","WSL2","Docker","GitHub"],
         color: "from-teal-500 to-emerald-400",
         videoUrl: "https://www.youtube.com/embed/99gKJIvHG3A",
-        link:"https://drive.google.com/file/d/1TghHBH1uUafra6OU_vQpdol92gct6F1d/view?usp=drive_link"
+        githubLink:"https://github.com/MadSadly/MediCore",
+        pptLink:"https://drive.google.com/file/d/1TghHBH1uUafra6OU_vQpdol92gct6F1d/view?usp=drive_link"
     },
     {
         id: 3,
@@ -44,7 +46,8 @@ export const projectData = [
         tags: ["Python", "XGBoost", "SHAP", "Java", "Spring Boot", "React", "Rule Engine", "MyBatis","GitHub"],
         color: "from-green-500 to-emerald-400",
         videoUrl: "https://www.youtube.com/embed/NED2g-EzZpY",
-        link:"https://drive.google.com/file/d/1n2XhaDLpFUl_N8K-_HwGx4xVUPg12EqC/view?usp=drive_link"
+        githubLink:"https://github.com/hee-03/project06",
+        pptLink:"https://drive.google.com/file/d/1n2XhaDLpFUl_N8K-_HwGx4xVUPg12EqC/view?usp=drive_link"
     },
     {
         id: 4,
@@ -63,7 +66,8 @@ export const projectData = [
         tags: ["Custom CNN", "MobileNetV2","YOLO", "TensorFlow", "Keras", "OpenCV", "Streamlit", "Data Pipeline"],
         color: "from-orange-500 to-amber-400",
         videoUrl: "https://www.youtube.com/embed/ae31c0gbF2Q",
-        link:"https://youtu.be/ae31c0gbF2Q"
+        githubLink:"https://github.com/rlaekagus329-prog/SmartConveyor/settings",
+        pptLink:"https://youtu.be/ae31c0gbF2Q"
     },
     {
         id: 5,
@@ -83,7 +87,7 @@ export const projectData = [
         tags: ["Python", "XGBoost", "Linear Regression", "R2 Score", "RMSE", "Data Pipeline", "Streamlit", "Matplotlib", "Seaborn", "Pandas","NumPy","Streamlit"],
         color: "from-yellow-400 to-orange-500",
         videoUrl: "https://www.youtube.com/embed/FWjxd8SWhuU",
-        link:"https://drive.google.com/file/d/1FAJzd0bNaEE5WGr6G5m1yGrsFwSVPT8B/view?usp=drive_link"
+        pptLink:"https://drive.google.com/file/d/1FAJzd0bNaEE5WGr6G5m1yGrsFwSVPT8B/view?usp=drive_link"
     },
     {
         id: 6,
@@ -102,7 +106,8 @@ export const projectData = [
 
         color: "from-purple-500 to-indigo-500",
         videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-        link: "https://drive.google.com/file/d/1VOb4SALR1sdzixY59rS19j9V-9ja4nAQ/view?usp=drive_link"
+        githubLink:"https://github.com/MadSadly/MeCa",
+        pptLink: "https://drive.google.com/file/d/1VOb4SALR1sdzixY59rS19j9V-9ja4nAQ/view?usp=drive_link"
     },
     {
         id: 7,
@@ -119,7 +124,8 @@ export const projectData = [
 결과적으로 대규모 외부 데이터 연동부터 DB 설계, 사용자 취향 분석 알고리즘까지 웹 개발 전 과정을 주도적으로 해결하며 견고한 아키텍처 설계의 뼈대를 다졌습니다.`,
         tags: ["MVC Pattern", "JSP", "Java", "Spring Boot", "Oracle SQL", "XML Parsing"],
         color: "from-pink-500 to-rose-400",
-        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+        pptLink:"",
     }
 ];
 

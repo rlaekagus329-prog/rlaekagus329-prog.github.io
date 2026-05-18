@@ -24,28 +24,29 @@
 }
 
 .text-jelly-bubble {
-    /* 1. 글자 안쪽을 뽀얀 화이트로 채워서 가독성 확보 (가장 중요!) */
+    /* 1. 순금빛 그라데이션 강제 적용 (!important로 덮어쓰기 방지) */
     background: linear-gradient(
             180deg,
-            rgba(255, 255, 255, 1) 0%,
-            rgba(230, 235, 255, 0.9) 100%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+            #fffbeb 0%,   /* 상단: 눈부시게 빛나는 화이트 골드 */
+            #fef08a 25%,  /* 상중단: 화사한 레몬빛 금색 */
+            #eab308 60%,  /* 하중단: 반짝이는 순금빛 */
+            #ca8a04 100%  /* 하단: 맑고 선명한 골드 섀도우 */
+    ) !important;
 
-    /* 2. 텍스트 테두리: 글자가 배경과 섞이지 않도록 선명하게 잡아줌 */
-    -webkit-text-stroke: 1px rgba(100, 150, 255, 0.3);
+    /* 2. 배경을 글자 모양으로만 잘라내기 */
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
 
-    /* 3. 다중 그림자: 글자를 배경에서 '똑' 떼어내기
-       - 첫 번째 그림자는 글자 바로 뒤에 어둡게 깔아 선명도를 높입니다.
-       - 두 번째는 부드럽게 퍼트려 입체감을 줍니다.
-    */
-    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3))
-    drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.15));
+    /* 3. 원래 글자색 투명화 (그라데이션이 비쳐 보이게 함) */
+    color: transparent !important;
 
-    /* 4. 입체감 광택 (text-shadow) */
-    text-shadow:
-            0px 3px 2px rgba(255, 255, 255, 1), /* 상단 하이라이트 */
-            0px -1px 2px rgba(0, 0, 0, 0.1);
+    /* 4. 입체 금테 라인 */
+    -webkit-text-stroke: 1.5px #ca8a04 !important;
+
+    /* 5. 그림자: 금색을 가리던 강한 흰색 하이라이트를 줄이고, 배경 분리용 어두운 그림자만 남김 */
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.5))
+    drop-shadow(0px 10px 20px rgba(202, 138, 4, 0.3));
+
+    /* 부드러운 엣지 입체감만 살짝 부여 */
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.4);
 }
